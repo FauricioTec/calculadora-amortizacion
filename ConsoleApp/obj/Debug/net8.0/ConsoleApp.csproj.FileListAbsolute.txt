@@ -16,3 +16,4 @@ C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\ConsoleApp\obj\Debug
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\ConsoleApp\obj\Debug\net8.0\ConsoleApp.pdb
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\ConsoleApp\obj\Debug\net8.0\ConsoleApp.genruntimeconfig.cache
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\ConsoleApp\obj\Debug\net8.0\ref\ConsoleApp.dll
+C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\ConsoleApp\obj\Debug\net8.0\ConsoleApp.sourcelink.json

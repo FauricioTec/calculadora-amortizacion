@@ -9,3 +9,4 @@ C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\Model\obj\Debug\net8
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\Model\obj\Debug\net8.0\refint\Model.dll
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\Model\obj\Debug\net8.0\Model.pdb
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\Model\obj\Debug\net8.0\ref\Model.dll
+C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\Model\obj\Debug\net8.0\Model.sourcelink.json

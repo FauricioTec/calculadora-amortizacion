@@ -132,7 +132,8 @@
             // sistemaAmortizacionLabel
             // 
             sistemaAmortizacionLabel.Font = new Font("Segoe UI", 10F);
-            sistemaAmortizacionLabel.Location = new Point(190, 151);
+            sistemaAmortizacionLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            sistemaAmortizacionLabel.Location = new Point(184, 149);
             sistemaAmortizacionLabel.Name = "sistemaAmortizacionLabel";
             sistemaAmortizacionLabel.Size = new Size(200, 20);
             sistemaAmortizacionLabel.TabIndex = 34;
@@ -140,7 +141,8 @@
             // interesLabel
             // 
             interesLabel.Font = new Font("Segoe UI", 10F);
-            interesLabel.Location = new Point(121, 124);
+            interesLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            interesLabel.Location = new Point(115, 122);
             interesLabel.Name = "interesLabel";
             interesLabel.Size = new Size(200, 20);
             interesLabel.TabIndex = 33;
@@ -148,7 +150,8 @@
             // plazoLabel
             // 
             plazoLabel.Font = new Font("Segoe UI", 10F);
-            plazoLabel.Location = new Point(158, 97);
+            plazoLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            plazoLabel.Location = new Point(152, 95);
             plazoLabel.Name = "plazoLabel";
             plazoLabel.Size = new Size(200, 20);
             plazoLabel.TabIndex = 32;
@@ -156,7 +159,8 @@
             // montoLabel
             // 
             montoLabel.Font = new Font("Segoe UI", 10F);
-            montoLabel.Location = new Point(229, 70);
+            montoLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            montoLabel.Location = new Point(223, 68);
             montoLabel.Name = "montoLabel";
             montoLabel.Size = new Size(200, 20);
             montoLabel.TabIndex = 31;
@@ -164,7 +168,8 @@
             // tipoCambioLabel
             // 
             tipoCambioLabel.Font = new Font("Segoe UI", 10F);
-            tipoCambioLabel.Location = new Point(221, 178);
+            tipoCambioLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            tipoCambioLabel.Location = new Point(215, 176);
             tipoCambioLabel.Name = "tipoCambioLabel";
             tipoCambioLabel.Size = new Size(208, 20);
             tipoCambioLabel.TabIndex = 30;
@@ -212,7 +217,8 @@
             // clienteLabel
             // 
             clienteLabel.Font = new Font("Segoe UI", 10F);
-            clienteLabel.Location = new Point(163, 43);
+            clienteLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            clienteLabel.Location = new Point(152, 41);
             clienteLabel.Name = "clienteLabel";
             clienteLabel.Size = new Size(200, 20);
             clienteLabel.TabIndex = 23;
@@ -240,7 +246,8 @@
             // fechaLabel
             // 
             fechaLabel.Font = new Font("Segoe UI", 10F);
-            fechaLabel.Location = new Point(77, 565);
+            fechaLabel.ForeColor = Color.FromArgb(20, 20, 50);
+            fechaLabel.Location = new Point(71, 563);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new Size(208, 20);
             fechaLabel.TabIndex = 19;

@@ -18,15 +18,13 @@ public class ClienteBccrWs
         cliente = new HttpClient();
     }
 
-    public double ObtenerTipoCambioDolar()
+    public async Task<double> ObtenerTipoCambioDolar()
     {
         var url =
             "https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx/ObtenerIndicadoresEconomicos?Indicador=317&FechaInicio=" +
             DateTime.Now.ToString("dd/MM/yyyy") + "&FechaFinal=" + DateTime.Now.ToString("dd/MM/yyyy") +
             "&Nombre=" + nombre + "&SubNiveles=N&CorreoElectronico=" + email + "&Token=" + token;
-        Console.WriteLine("ObtenerTipoCambioDolar: linea 27");
-        var respuesta = GetAsync(url).Result;
-        Console.WriteLine("ObtenerTipoCambioDolar: linea 29");
+        var respuesta = await GetAsync(url);
         var xml = new XmlDocument();
         xml.LoadXml(respuesta);
 
