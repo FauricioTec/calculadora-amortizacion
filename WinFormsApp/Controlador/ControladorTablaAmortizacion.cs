@@ -35,7 +35,7 @@ public class ControladorTablaAmortizacion
         string? sistemaAmortizacion = vista.amortizacionComboBox.SelectedItem?.ToString();
         string? moneda = vista.monedaComboBox.SelectedItem?.ToString();
         if (nombreCliente == "" || monto == "" || plazo == "" || porcentajeInteresAnual == "" ||
-            sistemaAmortizacion == "" || moneda == "")
+            sistemaAmortizacion == "" || moneda == "" || moneda == null || sistemaAmortizacion == null)
         {
             MessageBox.Show("Por favor, llene todos los campos");
             return;
@@ -75,11 +75,11 @@ public class ControladorTablaAmortizacion
     private void ActualizarInterfaz(TablaAmortizacion tablaAmortizacion, string nombreCliente, string monto,
         string plazo, string porcentajeInteresAnual, string? sistemaAmortizacion, double tipoCambio)
     {
-        vista.RellenarTablaAmortizacion(tablaAmortizacion.ToList());
-        vista.tipoCambioLabel.Text = tipoCambio.ToString(CultureInfo.InvariantCulture);
+        vista.RellenarTablaAmortizacion(tablaAmortizacion.GetDetallesConTotales());
+        vista.tipoCambioLabel.Text = tipoCambio.ToString(CultureInfo.InvariantCulture) + " colones";
         vista.fechaLabel.Text = tablaAmortizacion.Fecha.ToString();
         vista.clienteLabel.Text = nombreCliente;
-        vista.montoLabel.Text = monto;
+        vista.montoLabel.Text = monto + " colones";
         vista.plazoLabel.Text = plazo;
         vista.interesLabel.Text = porcentajeInteresAnual;
         vista.sistemaAmortizacionLabel.Text = sistemaAmortizacion;

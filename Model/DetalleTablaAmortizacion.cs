@@ -17,14 +17,11 @@ public class DetalleTablaAmortizacion
         this.cuota = cuota;
     }
 
-    public List<string> ToList()
+    public List<object> ToList()
     {
-        List<string> lista = new List<string>();
-        lista.Add(periodo.ToString());
-        lista.Add(saldo.ToString("N2")); // Dos decimales
-        lista.Add(intereses.ToString("N2")); // Dos decimales
-        lista.Add(amortizacion.ToString("N2")); // Dos decimales
-        lista.Add(cuota.ToString("N2")); // Dos decimales
-        return lista;
+        return new List<object>
+        {
+            periodo, saldo.ToString("N2"), intereses.ToString("N2"), amortizacion.ToString("N2"), cuota.ToString("N2")
+        };
     }
 }

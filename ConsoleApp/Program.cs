@@ -62,7 +62,7 @@ public static class Program
         Console.WriteLine("\nTabla de Amortización");
         Console.WriteLine("Período\tDeuda inicial\tIntereses (sk)\tAmortización (vk)\tcuota (ck)");
 
-        foreach (var fila in tablaAmortizacion.ToList())
+        foreach (var fila in tablaAmortizacion.GetDetallesConTotales())
         {
             Console.WriteLine(string.Join("\t", fila));
         }

@@ -49,12 +49,21 @@ public partial class VistaTablaAmortizacion : Form
 
         // Centrar los headers del datagrid
         tablaAmortizacionDataGrid.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        
+        // Deshabilitar el sort de las columnas
+        foreach (DataGridViewColumn column in tablaAmortizacionDataGrid.Columns)
+        {
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+        }
     }
 
-    public void RellenarTablaAmortizacion(List<List<string>> list)
+    public void RellenarTablaAmortizacion(List<List<object>> tablaAmortizacion)
     {
         tablaAmortizacionDataGrid.Rows.Clear();
-        foreach (var item in list) tablaAmortizacionDataGrid.Rows.Add(item.ToArray());
+        foreach (var detalle in tablaAmortizacion)
+        {
+            tablaAmortizacionDataGrid.Rows.Add(detalle.ToArray());
+        }
     }
 
     // Metodo para redonder border de los elementos del formulario

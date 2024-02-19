@@ -32,24 +32,17 @@ public class TablaAmortizacion
         totalCuotas += cuota;
     }
 
-    public List<List<string>> ToList()
+    public List<List<object>> GetDetallesConTotales()
     {
-        var lista = new List<List<string>>();
+        var lista = new List<List<object>>();
         foreach (var detalle in detalles) lista.Add(detalle.ToList());
 
-        lista.Add(new List<string>
+        lista.Add(new List<object>
         {
             "Total", totalSaldo.ToString("N2"), totalIntereses.ToString("N2"),
             totalAmortizacion.ToString("N2"), totalCuotas.ToString("N2")
         });
         return lista;
     }
-
-    public List<List<string>> GetDetalles()
-    {
-        var lista = new List<List<string>>();
-        foreach (var detalle in detalles) lista.Add(detalle.ToList());
-
-        return lista;
-    }
+    
 }
