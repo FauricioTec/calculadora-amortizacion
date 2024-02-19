@@ -77,7 +77,7 @@ public class ControladorTablaAmortizacion
     private void ActualizarInterfaz(TablaAmortizacion tablaAmortizacion, string nombreCliente, string monto,
         string plazo, string porcentajeInteresAnual, string? sistemaAmortizacion, double tipoCambio)
     {
-        vista.RellenarTablaAmortizacion(tablaAmortizacion.GetDetallesConTotales());
+        ActualizarDataGrid(tablaAmortizacion);
         vista.tipoCambioLabel.Text = tipoCambio.ToString(CultureInfo.InvariantCulture) + " colones";
         vista.fechaLabel.Text = tablaAmortizacion.Fecha.ToString();
         vista.clienteLabel.Text = nombreCliente;
@@ -85,5 +85,23 @@ public class ControladorTablaAmortizacion
         vista.plazoLabel.Text = plazo;
         vista.interesLabel.Text = porcentajeInteresAnual;
         vista.sistemaAmortizacionLabel.Text = sistemaAmortizacion;
+    }
+    
+    private void ActualizarDataGrid(TablaAmortizacion tablaAmortizacion)
+    {
+        vista.tablaAmortizacionDataGrid.Rows.Clear();
+        
+        foreach (var row in tablaAmortizacion.Detalles)
+        {
+            vista.tablaAmortizacionDataGrid.Rows.Add(row[0], 
+                ((double)row[1]).ToString("N2"), ((double)row[2]).ToString("N2"),
+                ((double)row[3]).ToString("N2"), ((double)row[4]).ToString("N2"));
+        }
+        
+        vista.tablaAmortizacionDataGrid.Rows.Add("Total", 
+            (tablaAmortizacion.TotalSaldo).ToString("N2"),
+            (tablaAmortizacion.TotalIntereses).ToString("N2"), 
+            (tablaAmortizacion.TotalAmortizacion).ToString("N2"),
+            (tablaAmortizacion.TotalCuotas).ToString("N2"));
     }
 }

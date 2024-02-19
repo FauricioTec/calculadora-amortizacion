@@ -62,11 +62,16 @@ public static class Program
         Console.WriteLine("\nTabla de Amortización");
         Console.WriteLine("Período\tDeuda inicial\tIntereses (sk)\tAmortización (vk)\tcuota (ck)");
 
-        foreach (var fila in tablaAmortizacion.GetDetallesConTotales())
+        foreach (var fila in tablaAmortizacion.Detalles)
         {
-            Console.WriteLine(string.Join("\t", fila));
+            Console.WriteLine(string.Join("\t\t", fila));
         }
         
-        Console.WriteLine("Fecha: " + DateTime.Now);
+        Console.WriteLine("Total\t\t" + tablaAmortizacion.TotalSaldo.ToString("N2") + "\t\t" +
+            tablaAmortizacion.TotalIntereses.ToString("N2") + "\t\t" +
+            tablaAmortizacion.TotalAmortizacion.ToString("N2") + "\t\t" +
+            tablaAmortizacion.TotalCuotas.ToString("N2"));
+        
+        Console.WriteLine("Fecha: " + tablaAmortizacion.Fecha);
     }
 }

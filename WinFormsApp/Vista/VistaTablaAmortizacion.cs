@@ -57,15 +57,6 @@ public partial class VistaTablaAmortizacion : Form
         }
     }
 
-    public void RellenarTablaAmortizacion(List<List<object>> tablaAmortizacion)
-    {
-        tablaAmortizacionDataGrid.Rows.Clear();
-        foreach (var detalle in tablaAmortizacion)
-        {
-            tablaAmortizacionDataGrid.Rows.Add(detalle.ToArray());
-        }
-    }
-
     // Metodo para redonder border de los elementos del formulario
     private void RedondearFomas()
     {

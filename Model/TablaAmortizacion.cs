@@ -2,7 +2,7 @@
 
 public class TablaAmortizacion
 {
-    private readonly List<DetalleTablaAmortizacion> detalles;
+    private List<DetalleTablaAmortizacion> detalles;
     private double totalAmortizacion;
     private double totalCuotas;
     private double totalIntereses;
@@ -31,21 +31,32 @@ public class TablaAmortizacion
         totalAmortizacion += amortizacion;
         totalCuotas += cuota;
     }
-
-    public List<List<object>> GetDetallesConTotales()
+    
+    public List<List<object>> Detalles
     {
-        var lista = new List<List<object>>();
-        foreach (var detalle in detalles) lista.Add(detalle.ToList());
+        get { var lista = new List<List<object>>();
+            foreach (var detalle in detalles) lista.Add(detalle.ToList());
+            return lista; }
+    }
 
-        lista.Add(new List<object>
-        {
-            "Total", 
-            totalSaldo,
-            totalIntereses,
-            totalAmortizacion,
-            totalCuotas
-        });
-        return lista;
+    public double TotalSaldo
+    {
+        get { return totalSaldo; }
+    }
+    
+    public double TotalAmortizacion
+    {
+        get { return totalAmortizacion; }
+    }
+    
+    public double TotalCuotas
+    {
+        get { return totalCuotas; }
+    }
+    
+    public double TotalIntereses
+    {
+        get { return totalIntereses; }
     }
     
 }

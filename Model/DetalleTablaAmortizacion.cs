@@ -2,11 +2,12 @@
 
 public class DetalleTablaAmortizacion
 {
-    private readonly double amortizacion;
-    private readonly double cuota;
-    private readonly double intereses;
-    private readonly int periodo;
-    private readonly double saldo;
+    
+    private int periodo;
+    private double saldo;
+    private double amortizacion;
+    private double cuota;
+    private double intereses;
 
     public DetalleTablaAmortizacion(int periodo, double saldo, double intereses, double amortizacion, double cuota)
     {
@@ -22,10 +23,10 @@ public class DetalleTablaAmortizacion
         return new List<object>
         {
             periodo, 
-            saldo.ToString("N2"), 
-            intereses.ToString("N2"), 
-            amortizacion.ToString("N2"), 
-            cuota.ToString("N2")
+            saldo,
+            intereses,
+            amortizacion,
+            cuota
         };
     }
 }

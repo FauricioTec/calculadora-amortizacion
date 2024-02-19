@@ -657,7 +657,7 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox2;
-        private DataGridView tablaAmortizacionDataGrid;
+        public DataGridView tablaAmortizacionDataGrid;
         private Label label4;
         private Label label5;
         private DataGridViewTextBoxColumn Column1;
