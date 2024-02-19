@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Model;
+using System.Collections.Generic;
 namespace ConsoleApp;
 
 public static class Program
@@ -62,9 +63,13 @@ public static class Program
         Console.WriteLine("\nTabla de Amortización");
         Console.WriteLine("Período\tDeuda inicial\tIntereses (sk)\tAmortización (vk)\tcuota (ck)");
 
-        foreach (var fila in tablaAmortizacion.Detalles)
+        foreach (var row in tablaAmortizacion.Detalles)
         {
-            Console.WriteLine(string.Join("\t\t", fila));
+            Console.WriteLine(row[0].ToString() + "\t\t" +
+                ((double)row[1]).ToString("N2") + "\t\t" +
+                ((double)row[2]).ToString("N2") + "\t\t" +
+                ((double)row[3]).ToString("N2") + "\t\t" +
+                ((double)row[4]).ToString("N2"));
         }
         
         Console.WriteLine("Total\t\t" + tablaAmortizacion.TotalSaldo.ToString("N2") + "\t\t" +
