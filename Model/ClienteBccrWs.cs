@@ -27,8 +27,8 @@ public class ClienteBccrWs
         string respuesta = await GetAsync(url);
         XmlDocument xml = new XmlDocument();
         xml.LoadXml(respuesta);
-        var valor = xml.GetElementsByTagName("NUM_VALOR");
-        var valorStr = valor[0].InnerText.Trim();
+        XmlNodeList valor = xml.GetElementsByTagName("NUM_VALOR");
+        string valorStr = valor[0].InnerText.Trim();
         return double.Parse(valorStr, CultureInfo.InvariantCulture.NumberFormat);
     }
 
