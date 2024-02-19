@@ -49,7 +49,9 @@ public class ControladorTablaAmortizacion
             double tipoCambioDolar = await clienteBccrWs.ObtenerTipoCambioDolar();
             double tipoCambio = moneda == "Colon" ? 1 : tipoCambioDolar;
             TablaAmortizacion tablaAmortizacion = sistema.CrearTablaAmortizacion(prestamo, tipoCambio);
-            ActualizarInterfaz(tablaAmortizacion, nombreCliente, monto, plazo, porcentajeInteresAnual, sistemaAmortizacion, tipoCambioDolar);
+            ActualizarInterfaz(tablaAmortizacion, prestamo.NombreCliente, prestamo.Monto.ToString(CultureInfo.InvariantCulture),
+                prestamo.Plazo.ToString(), prestamo.PorcentajeInteresAnual.ToString(CultureInfo.InvariantCulture),
+                sistemaAmortizacion, tipoCambioDolar);
         }
         catch (FormatException)
         {

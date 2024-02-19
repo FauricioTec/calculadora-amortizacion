@@ -21,7 +21,11 @@ public class DetalleTablaAmortizacion
     {
         return new List<object>
         {
-            periodo, saldo.ToString("N2"), intereses.ToString("N2"), amortizacion.ToString("N2"), cuota.ToString("N2")
+            periodo, 
+            saldo.ToString("N2"), 
+            intereses.ToString("N2"), 
+            amortizacion.ToString("N2"), 
+            cuota.ToString("N2")
         };
     }
 }
