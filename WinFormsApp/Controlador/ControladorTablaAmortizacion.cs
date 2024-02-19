@@ -26,7 +26,7 @@ public class ControladorTablaAmortizacion
         vista.WindowState = FormWindowState.Minimized;
     }
     
-    private void OnConsultarButtonClicked(object sender, EventArgs e)
+    private async void OnConsultarButtonClicked(object sender, EventArgs e)
     {
         string nombreCliente = vista.nombreTextBox.Text;
         string monto = vista.montoTextBox.Text;
@@ -46,7 +46,7 @@ public class ControladorTablaAmortizacion
             Prestamo prestamo = new Prestamo(nombreCliente, double.Parse(monto), int.Parse(plazo),
                 double.Parse(porcentajeInteresAnual));
             ClienteBccrWs clienteBccrWs = new ClienteBccrWs("Fauricio Granados", "fauricio.gr@gmail.com", "RRS0O0A886");
-            double tipoCambioDolar = clienteBccrWs.ObtenerTipoCambioDolar();
+            double tipoCambioDolar = await clienteBccrWs.ObtenerTipoCambioDolar();
             double tipoCambio = moneda == "Colon" ? 1 : tipoCambioDolar;
             TablaAmortizacion tablaAmortizacion = sistema.CrearTablaAmortizacion(prestamo, tipoCambio);
             ActualizarInterfaz(tablaAmortizacion, nombreCliente, monto, plazo, porcentajeInteresAnual, tipoCambioDolar);
