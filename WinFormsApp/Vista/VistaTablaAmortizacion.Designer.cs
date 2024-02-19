@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             mainPanel = new Panel();
             panel6 = new Panel();
             sistemaAmortizacionLabel = new Label();
@@ -96,6 +96,7 @@
             mainPanel.Controls.Add(panel6);
             mainPanel.Controls.Add(topPanel2);
             mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
             mainPanel.ForeColor = Color.FromArgb(20, 20, 27);
             mainPanel.Location = new Point(250, 0);
             mainPanel.Name = "mainPanel";
@@ -124,6 +125,7 @@
             panel6.Controls.Add(lineLabel1);
             panel6.Controls.Add(titleLabel2);
             panel6.Dock = DockStyle.Fill;
+            panel6.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
             panel6.Location = new Point(0, 25);
             panel6.Name = "panel6";
             panel6.Size = new Size(750, 595);
@@ -131,45 +133,45 @@
             // 
             // sistemaAmortizacionLabel
             // 
-            sistemaAmortizacionLabel.Font = new Font("Segoe UI", 10F);
-            sistemaAmortizacionLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            sistemaAmortizacionLabel.Location = new Point(184, 149);
+            sistemaAmortizacionLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            sistemaAmortizacionLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            sistemaAmortizacionLabel.Location = new Point(184, 150);
             sistemaAmortizacionLabel.Name = "sistemaAmortizacionLabel";
             sistemaAmortizacionLabel.Size = new Size(200, 20);
             sistemaAmortizacionLabel.TabIndex = 34;
             // 
             // interesLabel
             // 
-            interesLabel.Font = new Font("Segoe UI", 10F);
-            interesLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            interesLabel.Location = new Point(115, 122);
+            interesLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            interesLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            interesLabel.Location = new Point(115, 123);
             interesLabel.Name = "interesLabel";
             interesLabel.Size = new Size(200, 20);
             interesLabel.TabIndex = 33;
             // 
             // plazoLabel
             // 
-            plazoLabel.Font = new Font("Segoe UI", 10F);
-            plazoLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            plazoLabel.Location = new Point(152, 95);
+            plazoLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            plazoLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            plazoLabel.Location = new Point(152, 96);
             plazoLabel.Name = "plazoLabel";
             plazoLabel.Size = new Size(200, 20);
             plazoLabel.TabIndex = 32;
             // 
             // montoLabel
             // 
-            montoLabel.Font = new Font("Segoe UI", 10F);
-            montoLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            montoLabel.Location = new Point(223, 68);
+            montoLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            montoLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            montoLabel.Location = new Point(223, 69);
             montoLabel.Name = "montoLabel";
             montoLabel.Size = new Size(200, 20);
             montoLabel.TabIndex = 31;
             // 
             // tipoCambioLabel
             // 
-            tipoCambioLabel.Font = new Font("Segoe UI", 10F);
-            tipoCambioLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            tipoCambioLabel.Location = new Point(215, 176);
+            tipoCambioLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            tipoCambioLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            tipoCambioLabel.Location = new Point(215, 177);
             tipoCambioLabel.Name = "tipoCambioLabel";
             tipoCambioLabel.Size = new Size(208, 20);
             tipoCambioLabel.TabIndex = 30;
@@ -216,9 +218,9 @@
             // 
             // clienteLabel
             // 
-            clienteLabel.Font = new Font("Segoe UI", 10F);
-            clienteLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            clienteLabel.Location = new Point(152, 41);
+            clienteLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            clienteLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            clienteLabel.Location = new Point(152, 42);
             clienteLabel.Name = "clienteLabel";
             clienteLabel.Size = new Size(200, 20);
             clienteLabel.TabIndex = 23;
@@ -245,9 +247,9 @@
             // 
             // fechaLabel
             // 
-            fechaLabel.Font = new Font("Segoe UI", 10F);
-            fechaLabel.ForeColor = Color.FromArgb(20, 20, 50);
-            fechaLabel.Location = new Point(71, 563);
+            fechaLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline);
+            fechaLabel.ForeColor = Color.FromArgb(10, 10, 150);
+            fechaLabel.Location = new Point(71, 564);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new Size(208, 20);
             fechaLabel.TabIndex = 19;
@@ -265,48 +267,48 @@
             // tablaAmortizacionDataGrid
             // 
             tablaAmortizacionDataGrid.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(222, 228, 247);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(222, 228, 247);
-            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            tablaAmortizacionDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(222, 228, 247);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(222, 228, 247);
+            dataGridViewCellStyle5.SelectionForeColor = Color.Black;
+            tablaAmortizacionDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             tablaAmortizacionDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             tablaAmortizacionDataGrid.BackgroundColor = Color.White;
             tablaAmortizacionDataGrid.BorderStyle = BorderStyle.None;
             tablaAmortizacionDataGrid.CellBorderStyle = DataGridViewCellBorderStyle.None;
             tablaAmortizacionDataGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(11, 20, 50);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(11, 20, 50);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            tablaAmortizacionDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(11, 20, 50);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(11, 20, 50);
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            tablaAmortizacionDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             tablaAmortizacionDataGrid.ColumnHeadersHeight = 40;
             tablaAmortizacionDataGrid.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(20, 20, 27);
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            tablaAmortizacionDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle7.BackColor = SystemColors.Window;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(20, 20, 27);
+            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            tablaAmortizacionDataGrid.DefaultCellStyle = dataGridViewCellStyle7;
             tablaAmortizacionDataGrid.EnableHeadersVisualStyles = false;
             tablaAmortizacionDataGrid.Location = new Point(25, 250);
             tablaAmortizacionDataGrid.Name = "tablaAmortizacionDataGrid";
             tablaAmortizacionDataGrid.ReadOnly = true;
             tablaAmortizacionDataGrid.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             tablaAmortizacionDataGrid.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(238, 241, 251);
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(238, 241, 251);
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            tablaAmortizacionDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(238, 241, 251);
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle8.ForeColor = Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(238, 241, 251);
+            dataGridViewCellStyle8.SelectionForeColor = Color.Black;
+            tablaAmortizacionDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle8;
             tablaAmortizacionDataGrid.RowTemplate.Height = 35;
             tablaAmortizacionDataGrid.RowTemplate.ReadOnly = true;
             tablaAmortizacionDataGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -399,22 +401,26 @@
             // minimizePictureBox
             // 
             minimizePictureBox.Image = Properties.Resources.check_indeterminate_small_FILL0_wght400_GRAD0_opsz24;
-            minimizePictureBox.Location = new Point(684, 3);
+            minimizePictureBox.Location = new Point(688, 0);
             minimizePictureBox.Name = "minimizePictureBox";
-            minimizePictureBox.Size = new Size(30, 20);
+            minimizePictureBox.Size = new Size(30, 25);
             minimizePictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
             minimizePictureBox.TabIndex = 17;
             minimizePictureBox.TabStop = false;
+            minimizePictureBox.MouseLeave += minimizePictureBox_MouseLeave;
+            minimizePictureBox.MouseHover += minimizePictureBox_MouseHover;
             // 
             // closePictureBox
             // 
             closePictureBox.Image = Properties.Resources.close_FILL0_wght400_GRAD0_opsz24;
-            closePictureBox.Location = new Point(717, 3);
+            closePictureBox.Location = new Point(718, 0);
             closePictureBox.Name = "closePictureBox";
-            closePictureBox.Size = new Size(30, 20);
+            closePictureBox.Size = new Size(30, 25);
             closePictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
             closePictureBox.TabIndex = 16;
             closePictureBox.TabStop = false;
+            closePictureBox.MouseLeave += closePictureBox_MouseLeave;
+            closePictureBox.MouseHover += closePictureBox_MouseHover;
             // 
             // sidePanel
             // 

@@ -19,7 +19,7 @@ public class DetalleTablaAmortizacion
 
     public List<string> ToList()
     {
-        var lista = new List<string>();
+        List<string> lista = new List<string>();
         lista.Add(periodo.ToString());
         lista.Add(saldo.ToString("N2")); // Dos decimales
         lista.Add(intereses.ToString("N2")); // Dos decimales

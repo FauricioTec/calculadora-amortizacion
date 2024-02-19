@@ -49,7 +49,7 @@ public class ControladorTablaAmortizacion
             double tipoCambioDolar = await clienteBccrWs.ObtenerTipoCambioDolar();
             double tipoCambio = moneda == "Colon" ? 1 : tipoCambioDolar;
             TablaAmortizacion tablaAmortizacion = sistema.CrearTablaAmortizacion(prestamo, tipoCambio);
-            ActualizarInterfaz(tablaAmortizacion, nombreCliente, monto, plazo, porcentajeInteresAnual, tipoCambioDolar);
+            ActualizarInterfaz(tablaAmortizacion, nombreCliente, monto, plazo, porcentajeInteresAnual, sistemaAmortizacion, tipoCambioDolar);
         }
         catch (FormatException)
         {
@@ -73,7 +73,7 @@ public class ControladorTablaAmortizacion
     }
 
     private void ActualizarInterfaz(TablaAmortizacion tablaAmortizacion, string nombreCliente, string monto,
-        string plazo, string porcentajeInteresAnual, double tipoCambio)
+        string plazo, string porcentajeInteresAnual, string? sistemaAmortizacion, double tipoCambio)
     {
         vista.RellenarTablaAmortizacion(tablaAmortizacion.ToList());
         vista.tipoCambioLabel.Text = tipoCambio.ToString(CultureInfo.InvariantCulture);
@@ -82,5 +82,6 @@ public class ControladorTablaAmortizacion
         vista.montoLabel.Text = monto;
         vista.plazoLabel.Text = plazo;
         vista.interesLabel.Text = porcentajeInteresAnual;
+        vista.sistemaAmortizacionLabel.Text = sistemaAmortizacion;
     }
 }

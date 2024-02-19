@@ -69,11 +69,26 @@ public partial class VistaTablaAmortizacion : Form
         consultarButton.Region =
             Region.FromHrgn(CreateRoundRectRgn(0, 0, consultarButton.Width, consultarButton.Height, 10, 10));
         tablaAmortizacionDataGrid.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tablaAmortizacionDataGrid.Width,
-            tablaAmortizacionDataGrid.Height, 10, 10));
+            tablaAmortizacionDataGrid.Height, 5, 5));
     }
 
-    private void closePictureBox_Click(object sender, EventArgs e)
+    private void minimizePictureBox_MouseHover(object sender, EventArgs e)
     {
-        this.Close();
+        this.minimizePictureBox.BackColor = Color.FromArgb(185, 178, 170);
+    }
+
+    private void minimizePictureBox_MouseLeave(object sender, EventArgs e)
+    {
+        this.minimizePictureBox.BackColor = Color.FromArgb(215, 207, 200);
+    }
+
+    private void closePictureBox_MouseHover(object sender, EventArgs e)
+    {
+        this.closePictureBox.BackColor = Color.FromArgb(185, 178, 170);
+    }
+
+    private void closePictureBox_MouseLeave(object sender, EventArgs e)
+    {
+        this.closePictureBox.BackColor = Color.FromArgb(215, 207, 200);
     }
 }
