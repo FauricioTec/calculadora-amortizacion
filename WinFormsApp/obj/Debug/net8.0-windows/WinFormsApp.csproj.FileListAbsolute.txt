@@ -19,3 +19,4 @@ C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\WinFormsApp\bin\Debu
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.csproj.AssemblyReference.cache
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\WinFormsApp\obj\Debug\net8.0-windows\WinForms.79E25943.Up2Date
 C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.Properties.Resources.resources
+C:\Users\fauri\OneDrive\Escritorio\calculadora-amortizacion\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.sourcelink.json
