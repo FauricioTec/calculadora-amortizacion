@@ -39,8 +39,11 @@ public class TablaAmortizacion
 
         lista.Add(new List<object>
         {
-            "Total", totalSaldo.ToString("N2"), totalIntereses.ToString("N2"),
-            totalAmortizacion.ToString("N2"), totalCuotas.ToString("N2")
+            "Total", 
+            totalSaldo,
+            totalIntereses,
+            totalAmortizacion,
+            totalCuotas
         });
         return lista;
     }
